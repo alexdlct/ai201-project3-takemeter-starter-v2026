@@ -54,36 +54,47 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+### `analysis`
 
-**Definition:**
-
-**Example 1:**
->
-
-**Example 2:**
->
-
-### `label_two`
-
-**Definition:**
+**Definition:** A post whose main conclusion is supported by a relevant, checkable fact or statistic and reasoning that connects the evidence to the conclusion.
 
 **Example 1:**
->
+> Team Metrics Through 10 Games 10 games probably a big enough sample to look at some team-level performance metrics. Biggest takeaway is... yikes? I mean anyone who watches the games could have told you it was this bad, but nonetheless interesting to quantify relative to the rest of the league. The 5v5 play is as bad as it looks, in fact goaltending has been propping up the defense slightly it looks like. The Ducks' big losing streak(s) last year had far worse results than process IIRC so there was some hope it would turn around - this feels different. Teams have bad 10 game stretches of course, it's a long season, but they need to figure it out fast. Huge game in Philly tomorrow, gotta show up in that environment.
 
 **Example 2:**
->
+> 5 months ago our Zone Time metrics had improved from worst, to middle of the pack. This team is now top 10 in two zones and top 12 in another. 5v5 is even better. I think we all expected improvement, but I dont know if we were ready for something this drastic.
+
+### `hot_take`
+
+**Definition:** A user making unsupported claims about the team or the team's expected performance.
+
+**Example 1:**
+> What’s your biggest hot take as a Ducks fan? I’ll start: The webbed D logo is not as bad as people say: the Mighty Ducks jersey just make our current jerseys worse.
+
+**Example 2:**
+> Ducks in 6. Let’s go Anaheim!!
+
+### `reaction`
+
+**Definition:** A user's first impressions on recent team events, announcements, or speculation.
+
+**Example 1:**
+> Anaheim ducks HTR leak? Not Confirmed / Speculation  The Jersey itself is expected to be green, but I do like the purple.
+
+**Example 2:**
+> It’s been a hell of a run Remember we weren’t even expected to make playoffs, let alone win round 1. Disappointed in how the season ended but hey ducks always fly back north after things go south.
 
 ### The hardest boundary
 
 **Which two labels:**
-
+analysis and reaction
 **The decision rule I used every time:**
 <!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
      if the tone is heated." -->
+If a post uses a specific, checkable statistic to support its claim, then label it analysis, even if it contains an emotional reaction. Only use the Reaction label when the post primarily communicates feelings about a recent event without evidence-based reasoning.
 
-
-
+**Borderline Post**
+> “Spreadsheet Hockey — I’m coping so incredibly hard right now, but over the last 10 and 20 games the Ducks are first in Expected Goals at five-on-five.”
 ---
 
 ## The Dataset
@@ -92,7 +103,7 @@
      cases. -->
 
 **Where the posts came from:**
-
+r/anaheimducks
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
 
