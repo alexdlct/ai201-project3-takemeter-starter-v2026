@@ -66,7 +66,7 @@
 
 ### `hot_take`
 
-**Definition:** A user making unsupported claims about the team or the team's expected performance.
+**Definition:** A user making unsupported claims about the team or the team's expected performance or a topic closely related to the team.
 
 **Example 1:**
 > What’s your biggest hot take as a Ducks fan? I’ll start: The webbed D logo is not as bad as people say: the Mighty Ducks jersey just make our current jerseys worse.
@@ -106,15 +106,16 @@ If a post uses a specific, checkable statistic to support its claim, then label 
 r/anaheimducks
 **How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
 Say so plainly — the disclosure is required, not penalised. -->
+I labelled the first 20 posts cold, using only my written label definitions. The remaining 180 posts were pre-labelled with an automated, taxonomy-based heuristic. I then read every pre-labelled post, corrected inaccurate labels, and applied the analysis-versus-reaction decision rule consistently across the full dataset.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `analysis` | 54 | 27% |
+| `hot_take` | 50 | 25% |
+| `reaction` | 96 | 48% |
+| **Total** | **200** | **100%** |
 
 **Three hard cases**
 
@@ -122,25 +123,25 @@ Say so plainly — the disclosure is required, not penalised. -->
      been, and what you chose. These are worth more than the easy 190. -->
 
 **1.**
-> *The post:*
+> *The post:* “Our first three opponents were so brutal. To go 2-1 is pretty good with that schedule. 2023 Stanley Cup champ, 2026 Cup Finalist; 2024 and 2025 Cup Champs; 2024 and 2025 Cup Finalist with the best player in hockey. If anyone else had a tougher first three games, I’d love to hear it. Our young guns should be a playoff squad again. Probably won’t win the division but no reason we shouldn’t do well.”
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `hot_take`
 >
-> *I chose, because:*
+> *I chose, because:* I chose `hot_take`. The post gives checkable facts about the opponents, but those facts do not establish its main prediction that the Ducks should make the playoffs again.
 
 **2.**
-> *The post:*
+> *The post:* “What is a successful end of regular season stat line for a $18 million 1st line center? What would the floor be for a successful first season under this contract? I think 40 goals/60 assists would destroy any narrative that he failed to meet the contract expectations. My actual prediction is 25 goals/50 assists. What do you think?”
 >
-> *Could have been:*
+> *Could have been:* `analysis` or `hot_take`
 >
-> *I chose, because:*
+> *I chose, because:* I chose `hot_take`. The post includes numbers, but they are proposed standards and predictions rather than evidence used to support a conclusion.
 
 **3.**
-> *The post:*
+> *The post:* “How we feeling? Preseason Game 1 and dominated over the Sharks with a 6-2 victory with goals from LaCombe, Carlsson, and Lineau AND a hat trick from the Bucket himself. Our PP looks pretty good so far as well in my opinion. Thoughts and feelings?”
 >
-> *Could have been:*
+> *Could have been:* `reaction` or `hot_take`
 >
-> *I chose, because:*
+> *I chose, because:* I chose `hot_take`. Although it responds to a recent game, its central claim evaluates the power play from a single preseason result, so I treated it as an unsupported performance claim rather than only an immediate emotional response.
 
 ---
 
