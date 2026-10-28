@@ -149,16 +149,18 @@ I labelled the first 20 posts cold, using only my written label definitions. The
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`
 
 **Settings:** <!-- epochs, learning rate, batch size, seed -->
+3 epochs, a learning rate of `2e-5`, a batch size of 16, seed 42, and a maximum input length of 128 tokens. The run used the Apple Silicon GPU through MPS.
 
 **Anything I changed from the defaults, and why:**
+I kept all of the default training hyperparameters. I only set the label list to match the three labels in my dataset: `analysis`, `hot_take`, and `reaction`. Keeping the defaults gave me a clear initial result that I can compare with later runs without introducing several changes at once.
 
 **Split sizes:** <!-- train / val / test, and per-label counts in the test
 split. If a label had fewer than about 8 in test, say so — it explains a lot
 of next unit's variance. -->
-
+The stratified split produced 139 training posts, 31 validation posts, and 30 test posts. The test set contained 8 `analysis`, 8 `hot_take`, and 14 `reaction` posts. The two smaller labels had only 8 test examples each, so their F1 scores may change substantially across seeds.
 
 
 ---
@@ -174,17 +176,17 @@ of next unit's variance. -->
 
 **Moment 1**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Pre-labeling selected subreddit posts
+- *What came back:* Expected labels following the definitions in this readme
+- *What I changed:* I changed some of the labels to be reactions instead of analysis because specific numbers weren't really mentioned in some posts that were marked as analysis, and instead just eyeball tested from fans who don't know the game well. 
 
 **Moment 2**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Help deciding difficult boundary posts
+- *What came back:* Reasonings for whether some of the hard label boundary posts were hot takes or reactions
+- *What I changed:* The pre-labeled labels to hot_takes if I agreed with the reasoning for that
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** I labelled the first 20 posts independently without AI assistance. The remaining 180 posts were pre-labelled using an automated taxonomy-based heuristic based on my written definitions. I then personally read every pre-labelled post and corrected labels that did not match my definitions. The final labels reflect my decisions, not the automated suggestions.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
