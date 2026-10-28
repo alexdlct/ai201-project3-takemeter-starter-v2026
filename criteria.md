@@ -51,62 +51,62 @@ whether you hit them:
 
 ---
 
-## 1.
+## 1. Overall Accuracy
 
 <!-- Your criterion. It must name a number. -->
-
+The model should achieve a minimum of 0.65 accuracy on the test set across all three seeds.
 
 
 **Why this target:**
-
+This is because if the model was to just just randomly pick from one of the 3 labels for each data point, it should get around a 0.33 accuracy, so having a goal of 0.65 accuracy allows us to gauge that the model performs substantially better (2x) than just picking randomly.
 
 
 ---
 
-## 2.
+## 2. Minimum Label Counts
 
 <!-- Your criterion. -->
-
+Each label must represent 25% of the total dataset, meaning they should each have at least 50 datapoints. 
 
 
 **Why this target:**
-
+I did this because we need to create a large enough dataset such that a single incorrect prediction won't completely throw off the model's performance. By getting at least 50 points for each label, we allow the model to have enough samples to have an established "profile" of each label
 
 
 ---
 
-## 3.
+## 3. Maximum Label Counts
 
 <!-- Your criterion. -->
-
+No single label should represent more than 50% of the total dataset, meaning there should be no label with more than 100 samples
 
 
 **Why this target:**
-
+We do this because we don't want the model to have too many posts within its training data of a single label such that it overfits to that singular label instead of learning the patterns of other labels. 
 
 
 ---
 
-## 4.
+## 4. Confident Predictions should be accurate
 
 <!-- Your criterion. -->
-
+The top third most confident predictions must have an accuracy rate of 0.7 across all three seeds
 
 
 **Why this target:**
-
+The model's confidence is only worthwhile if that confidence also correlates with the actual outcome of those predictions. High confidence with low accuracy means nothing but poor performance
 
 
 ---
 
-## 5.
+## 5. Confidence must be a reliable metric
 
 <!-- Your criterion. -->
-
+The accuracy of the top third most confident predictions must be at least 15% more accurate than that of the least confident third of predictions across all three seeds
 
 
 **Why this target:**
-
+If the lower confidence predictions don't have a significantly drop off in accuracy, then there is no reason for confidence to be tracked at all, as it would not be a reliable source of new information about the predictions.
 
 
 ---
