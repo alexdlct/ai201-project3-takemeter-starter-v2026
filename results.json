@@ -1,13 +1,13 @@
 {
   "seed": 42,
   "n_test": 30,
-  "accuracy": 0.5,
-  "f1_macro": 0.2888888888888889,
+  "accuracy": 0.4666666666666667,
+  "f1_macro": 0.2170542635658915,
   "per_label": {
     "analysis": {
-      "precision": 0.5,
-      "recall": 0.125,
-      "f1": 0.2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
       "support": 8
     },
     "hot_take": {
@@ -17,17 +17,17 @@
       "support": 8
     },
     "reaction": {
-      "precision": 0.5,
+      "precision": 0.4827586206896552,
       "recall": 1.0,
-      "f1": 0.6666666666666666,
+      "f1": 0.6511627906976745,
       "support": 14
     }
   },
   "confusion": {
     "analysis": {
-      "analysis": 1,
+      "analysis": 0,
       "hot_take": 0,
-      "reaction": 7
+      "reaction": 8
     },
     "hot_take": {
       "analysis": 1,
@@ -41,10 +41,10 @@
     }
   },
   "confidence": {
-    "mean_when_right": 0.4979928433895111,
-    "mean_when_wrong": 0.3828657865524292,
+    "mean_when_right": 0.4994060695171356,
+    "mean_when_wrong": 0.3782276511192322,
     "accuracy_most_confident_third": 1.0,
-    "accuracy_least_confident_third": 0.2,
+    "accuracy_least_confident_third": 0.1,
     "n_per_third": 10
   },
   "device": "mps",

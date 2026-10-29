@@ -234,6 +234,16 @@ The fine-tuning didn't add to the hot_take or analysis accuracy, in fact it wors
 | 4.  |  |  |  |  |  |
 | 5.  |  |  |  |  |  |
 
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.500 | 0.467 | 0.633 | 0.167 |
+| Macro F1 | 0.289 | 0.212 | 0.480 | 0.268 |
+| F1 — `analysis` | 0.200 | 0.000 | 0.667 | 0.667 |
+| F1 — `hot_take` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `reaction` | 0.667 | 0.636 | 0.774 | 0.138 |
+
+Accuracy moved 0.167 across seeds — more than 10 points. Your dataset is too small or too lopsided for a stable measure. That IS a diagnosis. Write it down.
+
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
