@@ -1,0 +1,184 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 30,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 30,
+    "accuracy": 0.2,
+    "f1_macro": 0.19999999999999998,
+    "per_label": {
+      "analysis": {
+        "precision": 0.15789473684210525,
+        "recall": 0.375,
+        "f1": 0.22222222222222218,
+        "support": 8
+      },
+      "hot_take": {
+        "precision": 0.2857142857142857,
+        "recall": 0.25,
+        "f1": 0.26666666666666666,
+        "support": 8
+      },
+      "reaction": {
+        "precision": 0.25,
+        "recall": 0.07142857142857142,
+        "f1": 0.11111111111111112,
+        "support": 14
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "Hurricanes Owner Puts Family on Stanley Cup\n\nPeople who weren\u2019t even employed with the team. In fact. I think his 7 year old kid is on there.\n\nThoughts on this?",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Here's why we'll match\u2014but probably lose Mintyukov\n\n**Salary cap numbers to know**\n\n* 2026-2027: $104m upper limit\n* 2027-2028: $113m upper limit\n* 2028-2029: $123m upper limit\n\n**Match the offer sheet (we'd have $17m remaining for this season)**\n\n* Leo becomes the highest paid player in the league\n* He gets a NMC\n* He'll be a UFA at age 26\n\n**Let Leo walk (we'd have $35m remaining)**\n\n* We get 4 first-round picks over the next four years (probably mid-late picks)\n* We reallocate the $18m cap hit & use the picks to build through trades\n\n**Ultimately, I think we match the offer sheet \u2014 but we wait the full 7 days so that Philly has tied up its cap space.** \n\nThis helps us figure out a deal for Cutter (He & Terry have the same agent, Kurt Overhardt). Probably 8 years x $12.5m\n\nUnfortunately, I think this means we lose Mintyukov to another offer sheet. For example, 2 years at $7m would be prohibitive for us, and somebody probably takes a swing. The comp would be a 1st and a 3rd. \n\nIn all, we'd have just $4.5 million to build out the roster for next season. So, I'm not optimistic about making the playoffs in 2026-2027.\n\nBut, in 2027-2028, we'll have $12.75 million coming off the books when Kreider and Killorn's deals expire. And with the cap rising by $9 million, we'll effectively have \\~$21 million for Sennecke's next contract and bolstering the roster.\n\nLeo's offer sheet definitely makes roster building harder, but with the money that's being thrown around, $18m AAV isn't *that* much higher than a $14-15m AAV. Essentially, this costs us a 2nd-3rd pairing defenseman (and look\u2014we just jettisoned Zellweger).\n\nUltimately, I think we can stomach this deal because of the depth in our prospect pool. It's definitely an overpay and the deal looks shocking today. But in 4-5 years, it should be fair value as a percentage of the cap (maybe 14%).\n\nRealistically, our contending window only opens in the next 2 years. So, we need Luneau, Solberg, McQueen, and Klepov to step up over the next couple years.\n\nAltogether, I think this encourages PVB to sign our other RFAs sooner. This isn't the disaster everybody's making it out to be, but it'll definitely be harder to compete against a team like Montreal which locked down Hutson ($8.85m AAV) and Demidov for ($9.15m AAV) early.\n\nI am scared of turning into Maple Leafs West though, with big money tied up in just 4-5 guys.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Derek Lee regarding last night's injuries",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Drunk Flames Fan\n\nShout out Warren on the ducks. I was trying some wholesome heckling tonight, and he laughed when I put this image against the glass.\n\nGG boys. You have a good team.",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Takeaways from the Ducks 3-2 OT Win over the Panthers",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "McQueen and Solberg Recalled(?)",
+      "gold": "reaction",
+      "predicted": "reaction"
+    },
+    {
+      "text": "One down 83 to go!\n\nLET\u2019S GO DUCK\u2019S!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Mon 1er game worn !\n\nFi\u00e8re et tr\u00e8s heureux d'avoir pu acqu\u00e9rir ce morceau d'histoire de mon \u00e9quipe de c\u0153ur !\n\nUn joueur russe atypique qui avez un vrai r\u00f4le dans l'\u00e9quipe ! \n\n6 saisons pass\u00e9es ches les ducks.\n\nGP: 552   PTS: 68   PIM: 494",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Let\u2019s match and then offer sheet Zegras and Grebenkin.\n\nWe have more cap space to pull shit like this. FAFO. \n\nEither fuck the flyers situation, or sign and then trade them.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Husso Penitentiary with the Bucket!",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Hypothetical-what happens if we lose Cutter?\n\nCurious what everyone thinks. If we were to lose Cutter, how would that impact the roster? Who could we realistically get in a trade or free agency as a replacement, or would our only option be a prospect who could step into that role? Does everyone end up playing a slot higher than they should, or do we have enough depth to absorb the loss? And assuming we don't find a true replacement, then how long before we see another playoff lol",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Take this with a grain of salt but:\n\nIf true, we are done. Cap purgatory turning into cap hell. What even is the plan here? Sign and trade cutter?Some ridiculous developments are coming out of the offer sheet deal. Looking at this long term, $36M in cap space for just 2 players is STEEP.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Jayden Kurtz looks legit\n\nI know it\u2019s only preseason and there are other prospects who looked really good on the blueline (like Luneau), but just wanted to shout out this kid since he\u2019s looked really good despite just being drafted (and being a little under the radar compared to guys like Klepov, McQueen, and even Mathis Preston).\n\nHe played on the top pair with Mintyukov and didn\u2019t look out of place. He was great at breaking the puck out and making the first pass, which got him an assist on the only goal of the game. And he\u2019s doing this despite being a raw 18 y/o who played high school hockey last year. That\u2019s insanely quick adaptation to nhl pace for a defensemen, which is a position that usually takes longer to develop.\n\nObviously not going to make the roster this year, but it\u2019s cool to see a recent draft pick look good right away along with Klepov, even if it\u2019s a small sample size.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Could this offer sheet situation have been avoided?\n\nHi, Devils fan here, I want to offer my condolences to Ducks fans. I have been rooting for your team to be a contender and this offseason has been a disaster for you guys already so I feel for you guys. I don\u2019t know much about how offer sheets work, could this situation have been totally avoided? And if so how? Because if this is due to Verbeek playing hardball with contract negotiations or something then this is genuinely one of if not the most embarrassing fumble by a GM ever and should alone get him fired. If you are arguing over 1 or 2 million and then get forced to pay 5 million more then it totally defeats the purpose of arguing, and you also fracture your relationship with your own players and other GMs around the league. Like if this was my team I would be so unbelievably frustrated, I mean I already am and it\u2019s not even my team.",
+      "gold": "analysis",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Leo needs to be on the PK I was at the game last night and I don\u2019t know how it looked on TV but I thought the Ducks played a good game but obviously got killed any time they took a penalty. Each penalty that was taken I couldn\u2019t help but to wonder why(especially when two penalty killing centers were out of the lineup) we haven\u2019t seen Leo get thrown out there. We saw Cutter there instead, who I thought played a solid defensive game. Leo is your 18M $ man who has been likened to Aleksander Barkov for crying out loud, he has all the tools to be an elite two way player. I wonder what\u2019s going on to where we have yet to see that part get added to his game, I won\u2019t go so far to call it malpractice but it is border line unfathomable to me that either because of effort or coaching decisions that we have not seen Leo on the PK on a regular basis. McQueen and Klepkov both look like they\u2019re getting more comfortable but need to learn how to learn to play without taking penalties ( the interference and hooking penalties were unnecessary especially where the game was at). I really thought we should have had that game, PK was leaving Dostal out to dry last night.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "he gives that selanne/getzlaf/neidermayer energy",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "To combat the doom and gloom\n\ni was really hoping that this offseason was gonna keep things relatively the same, but it feels like PV lost control after the mcT trade (which i still don\u2019t think was that bad of a decision).\n\nI\u2019ve seen and heard a lot of doom and gloom from other duck fans, and I have been holding my tongue in order to see things play out before I bungle and put my foot in my mouth\n\nthe following will be a collection of hot takes and opinions that i want to get your opinions on\n\nlooking back on the RHD situation, i think PV made the right decision not match the offers that trouba or jc where given (assuming PV let them go out and check what the league was valuing them at) right now in our current cap crunch, a 8 million dollar trouba would have us shopping for a No1 center, and its not like we have no rhd, hellison is serviceable for rn, and we have (in my opinion) nhl ready defensemen in the pipe who have been left unused, so i don\u2019t think we\u2019re as bad as everyone says our d core will be\n\n  \ni keep hearing stuff about how with this carlsson offersheet we are going to be able to have any depth, or how this will lead to cutter asking for 18 million. the thing that PV is best at is finding g players for cheap, i saw that people where broken up about viel and ross leavin, they look close to 100% pay raises from their new teams, viel was making 775k before his new deal in tampa, and we got ross from wavers, i just do get why people think that PV now is incapable of finding players like viel and ross, and the rumors about cutter demanding the same contract as leo just doesn\u2019t pass the sniff check. im sure that cutter Gauthier understands that this is not a normal deal, and if anyone would take a paycut in order to screw Philadelphia it would be him, \n\n\n\nhot take, i feel like after getting this big of a contract leo might be willing to sign a team friendly contract when his contract expires. As (in my opinion) the best player selected in the 2023 draft he was obviously going to require a hellva pay day, and lets be honest who would reject an 18 million dollar contract, but after he has completed one of the most lucrative contracts in nhl history, he\u2019s going to want to hoist the cup (if he hasn\u2019t already) so i feel like he\u2019ll take less.\n\n  \nlastly, people have been saying that we\u2019re heading towards a core 4 situation,  but I disagree, toronto in my opinion had problems that transcended roster depth, there problems where institutional and toxic, dragging the performance of there stars down and creating immense amounts of friction, we saw how marner played during the playoffs, a guy who everyone said wasn\u2019t worth it and was only after the money proved Toronto wrong, I don\u2019t get that vibe from Anaheim, i don\u2019t see players yelling at eachother on the bench, Q isn\u2019t making beckett rate his teammates from worst to best, and Anaheim is a much different, lower stress market, ducks players aren\u2019t put under the media magnifying glass and our diehard fans aren\u2019t (from what I've seen) telling our players to intentionally injure other teams stars, \n\n  \nwhat do yall think, thanks",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "If Bedard > Leo, then we offer sheet Bedard, if he signs, we\u2019ve improved our team right?\n\nThis is some 4D 5D chess if it works. Consensus is (healthy) Bedard is better than Leo. They throw generational talent label on Bedard like they do to Crosby. While Leo is like a Kopitar, Getzlaf, Matts Sundin elite level. If Bedard signs, let Leo walk, give CHI the PHI\u2019s draft picks. We\u2019ve significantly improved the Ducks, while saying fuck the Flyers. Briere you\u2019ve made your bed, now lie in it!\n\nIf Bedard doesn\u2019t sign or CHI matches (do they have the cap to match?), we fire Verbeek,  fast track McQueen. Used the saved money and throw money at Dallas\u2019 Jason Robertson. Robo already outperforms Leo in points and is consistent, move Cutter back to center where he played prior to the Ducks.\n\nSo if plan A or plan B works, did we greatly improve the team?\n\nI wonder if they\u2019ll delete this thread too \ud83d\ude44",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "One PVB/Carlsson point not nearly enough are acknowledging\n\nWhile we are all living through hockey\u2019s own burning man festival, AT LEAST remember this about the man on the pyre\u2014 it took skills and big stones to take Leo 2nd overall over Fantilli. And he was absolutely right about the kid.\n\nHow many other GM\u2019s would\u2019ve had that eye and those balls to take Leo against the popular wisdom? Reddit was torching PVB for it then.\n\nAgree the negotiating needs work, and this mistake hurts like hell, but I feel his eye and knack for development should not be underestimated. We can show gratitude AND roast him alive simultaneously.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Quick rant Can we stop with the Leo slander after every loss? Either cheer for the team or don\u2019t, I\u2019m sick of seeing the \u201c$18 mil well spent\u201d nonsense.\n\nDon\u2019t talk shit now and hop on the hype train in a couple years when we\u2019re one of the best teams in the league. Stay on that side, we don\u2019t need or want you here\u270c\ud83c\udffb",
+      "gold": "reaction",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Between game play\nDiscussion\nWhile at the Gulls game last night and over the last few years at Ponda and different arenas I\u2019ve noticed the \u201cMake loud noises\u201d and \u201cLet\u2019s get loud\u201d segments seem to happen more frequently. I\u2019m not looking for a club experience, is it just me? Am I getting that old?",
+      "gold": "hot_take",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Who do you want as the next captain vs who you think it\u2019s going to be\n\nI\u2019ll go first. I want Jackson LaCombe, but I think it will be Leo.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Do i have it wrong on the defense this year?\n\nI hear all these podcasters and analysts talking about that due to the ducks losing alot of their veteran blue line that they are going to be the worst defense in the league but weren\u2019t we one of the worst already last year even with trouba and carlson and radko? To me it seems like trouba is okay but not all that great at defense(his analytics are not good), radko had been terrible, and carlson was very good on the offense but just okay on the defense. So all the doom and gloomers saying we re gonna be terrible idk maybe im not seeing it? I dont think we re gonna be stellar but i dont think we re gonna be terrible as so many have said im not seeing it. What do you guys think? You guys know probably way more lol",
+      "gold": "analysis",
+      "predicted": "hot_take"
+    },
+    {
+      "text": "Leo\u2019s dad and his influence on the offersheet [Friedman]\n\n\\*Obligatory everyone go listen to the 32 Thoughts podcast with Elliot Friedman.\\* \n\nI was listening to the podcast with Friedman and Leo\u2019s agents Matt and Ryan Keator (father-son duo). They said Leo was speechless when the offersheet came in. They joked that people would sign this immediately on July 1st when it was sent. But in this instance they waited 2 days to sign. This particular part stuck out to me:\n\n\\*Starts 28:30 in the podcast \n\nMatt: This is kinda a life changing thing for the family. And I think his dad kinda told me he goes he took charge and this is something we have to do, you know?\n\nFriedman: What\u2019s his dad\u2019s name?\n\nMatt: Kenneth. Very smart businessman. I was talking to Kenneth this morning and he goes \u2018yeah, I put my foot down\u2019. He goes \u2018this is too good an offer\u2019, you know. And I think, there was pressure from them to say let\u2019s do this let\u2019s get this done because Leo was definitely feeling it and that why we did.\n\n\u2026.I may be reading into this but it sounds like Leo was truly contemplating this OS and even having trouble with navigating it before they signed and ultimately it was his family who moved this along? Is it possible the Leo could have tabled this if his family didn\u2019t step in? That\u2019s a huge decision to make as a 21 year old.",
+      "gold": "analysis",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Leo has more points in 2 games than the Flyers entire top line in 4 games.\n\nlol, suck it Philly.",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Where's the Philly Hate?\n\nEveryone is trashing Verbeek right now but, straight up why are we not more pissed at Philly right now? This was a calculated slimy move designed to cripple our team. Every way you slice it it's terrible for us. Yes, Verbeek should have signed Leo last year but, GM's have to be careful managing our contracts. Otherwise, we end up like the Leafs. We can't just throw our money around so some stinginess from Verbeek is a good thing. Philly 100% didn't have to do this. Leo is not worth that much and they know it. But, they chose to fuck us. Go pick on Vegas or Florida for fuck sakes. But, no. Pick on small market Anaheim. For all we know Leo could have been holding out. So, at the end of the day fuck Philly and fuck Daniel Briere.",
+      "gold": "hot_take",
+      "predicted": "analysis"
+    },
+    {
+      "text": "Lineups to start the year\n\nTrying to piece together lines based on what I've seen/heard, does the following seem likely?\n\nGauthier/Leo/Klepov\n\nKillorn/Granlund/Beckett\n\nGreer/Poehling/Vatrano\n\nMalott/Washe/Colangelo\n\n  \nObviously they will have a lot of information about bubble players and lines before Terry gets back, but will be interesting to see where Klepov would move to when Terry returns (if he makes the team).\n\n  \nWho is the last guy?  Nesterenko? Gaucher? I haven't seen much out of either, I'd probably lean Caulfield tbh, though i know the first 2 will hit waivers if they don't make the team which may play into it.  Not sure about Caulfield.\n\n  \nI don't think we have a lot of visibility about Dman partners yet, but taking a stab, maybe:\n\nLacombe/Moore\n\nMintyukov/Jensen\n\nHinds/Luneau\n\nHelleson\n\n  \nAnyway, excited to see what this team will look like.  I do feel like we will score goals and the D will be faster- hopefully they can ramp up quickly and limit the mistakes.\n\nLove to hear your thoughts.",
+      "gold": "analysis",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Sweet Karmic VENGEANCE!They need 5 more losses to break the modern record (and it'd be us to do it on 10/24) for longest winless starts and 10 to break the all time record! I want these OFFER LETTERING bastards to go down as the worst team in history! ...I'm not bitter... ok maybe a little but still fuck The Flyers!\n\nLGD \ud83d\udd25\ud83e\udd18\ud83c\udffb\ud83e\udd86\ud83e\udd18\ud83c\udffb\ud83d\udd25",
+      "gold": "reaction",
+      "predicted": "analysis"
+    },
+    {
+      "text": "I think Leo is less likely to be the next captain now. LaComb or Cutter?\n\nI\u2019ve stayed off the Ducks and Hockey sub lately, but what a day to peek in!!!! I\u2019m trying to not add to all the hot takes posts and comments which is why I\u2019ve stayed off but lets try to objectively look at the effects of today.\n\nFirst off the qualities that make a good captain and put that as a baseline vs players.\n\nLeo - (Aside from the obvious if Verbeek doesn\u2019t match) I can\u2019t and seems like majority of people can\u2019t blame Leo for taking the money as a 21 year old. imo this is on Verbeek and FAFO consequences. However this makes me question if he puts the team first before himself? This goes back to qualities of a team captain. If he wanted to win the Cup here, he would sign a deal that he\u2019s worth while still leaving room to surround him with players to push for the Cup. How will the locker room feel and do they want to follow his lead to win (I\u2019m thinking of McDavid). Or because Leo is so young, he still feels he has time to win the Cup, but don\u2019t think he can do it here with the Ducks? If Leo is appointed captain, will this wreck him trying to live up to the contract while still developing his game? Or it\u2019s PR management to recoup this investment and parade him as the highest paid AAV superstar captain, so come watch the Ducks play!\n\nLaComb - I think this is pushing LC towards the top of the totem. Majority of captain qualities are there. I think he\u2019s still a little soft of a player, as he always looks away, skates away, no extra push or soft crosscheck to people standing around the crease. He doesn\u2019t need to be a mean player, just show a little more assertiveness for your domain! Teammates see that and will follow your lead\n\nCutter - great PR, says all the right things in interviews, most levelheaded guy I think. Stays focus and assertive. Spine injury? No problem, I\u2019m going to score this goal and keep pushing into the playoffs. THIS right here! Seems to get along great with teammates, see his clips/interviews with Leo and Beckett.\n\nA little thought I wanted to add here at the end; with every player that gave Verbeek a hard time with contracts, they\u2019ve all been shipped out. Makes me wonder about Leo now... I can see it now if that happens, Henry and Susan is going to march into Verbeek\u2019s office and fire him on the spot",
+      "gold": "analysis",
+      "predicted": "reaction"
+    },
+    {
+      "text": "Takeaways from the Ducks 4-2 Win over the Flames",
+      "gold": "reaction",
+      "predicted": "analysis"
+    }
+  ]
+}

@@ -202,19 +202,21 @@ The stratified split produced 139 training posts, 31 validation posts, and 30 te
 
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.200 | 0.500 | +0.300 |
+| Macro F1 | 0.200 | 0.289 | +0.089 |
+| F1 — `analysis` | 0.222 | 0.200 | -0.022 |
+| F1 — `hot_take` | 0.267 | 0.000 | -0.267 |
+| F1 — `reaction` | 0.111 | 0.667 | +0.556 |
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
+     I expect that the trained model will beat the baseline in the accuracy parameter.
 
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
-
+The fine-tuning didn't add to the hot_take or analysis accuracy, in fact it worsened the accuracy of the analysis label. The reaction label did see significant improvement, however.
 
 
 ---
