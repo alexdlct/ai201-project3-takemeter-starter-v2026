@@ -249,17 +249,20 @@ Accuracy moved 0.167 across seeds — more than 10 points. Your dataset is too s
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+| true \ predicted | analysis | hot_take | reaction |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **analysis** | 1 | 0 | 7 |
+| **hot_take** | 1 | 0 | 7 |
+| **reaction** | 0 | 0 | 14 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
-
+Biggest confusion: 7 real `analysis` posts called `reaction`.
+That's lopsided — the model leans toward `reaction` on this pair.
+A direction like that usually points at your labelling rather than the
+model. Your agreement report is the thing that can tell you which.
 
 
 ---
