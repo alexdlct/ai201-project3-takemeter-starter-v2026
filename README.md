@@ -228,19 +228,12 @@ The fine-tuning didn't add to the hot_take or analysis accuracy, in fact it wors
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | At least 0.65 for every seed | 0.500 | 0.467 | 0.633 | **MISSED** |
+| 2. Minimum label counts | At least 50 posts per label | 54 / 50 / 96 | 54 / 50 / 96 | 54 / 50 / 96 | **MET** |
+| 3. Maximum label count | No label above 100 posts | 96 | 96 | 96 | **MET** |
+| 4. Accuracy of most-confident third | At least 0.70 for every seed | 1.000 | 1.000 | 0.900 | **MET** |
+| 5. Confidence accuracy gap | At least +0.15 for every seed | +0.800 | +1.000 | +0.400 | **MET** |
 
-| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
-|---|---|---|---|---|
-| Overall accuracy | 0.500 | 0.467 | 0.633 | 0.167 |
-| Macro F1 | 0.289 | 0.212 | 0.480 | 0.268 |
-| F1 — `analysis` | 0.200 | 0.000 | 0.667 | 0.667 |
-| F1 — `hot_take` | 0.000 | 0.000 | 0.000 | 0.000 |
-| F1 — `reaction` | 0.667 | 0.636 | 0.774 | 0.138 |
 
 Accuracy moved 0.167 across seeds — more than 10 points. Your dataset is too small or too lopsided for a stable measure. That IS a diagnosis. Write it down.
 
@@ -303,7 +296,7 @@ model. Your agreement report is the thing that can tell you which.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 29 / 30 = 97%
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
@@ -326,25 +319,17 @@ model. Your agreement report is the thing that can tell you which.
      what you did across your own 200. -->
 
 **1.**
-> *The post:*
+> *The post:* Three of us ran the same session on the same day, different shoes, within 10 seconds of each other over 5 miles. I'm not saying shoes do nothing, but whatever they do was smaller than the noise between three people.
 >
-> *Staff said / I said:*
+> *Staff said / I said:* analysis / hot_take
 >
-> *My call, and why:*
+> *My call, and why:* I said that it was a hot take because they never made a claim about anything, although they did present some statistics, they never made a concrete claim about whether shoes did or did not have an effect.
 >
-> *Which pile:*
+> *Which pile:* (b)
 
-**2.**
-> *The post:*
->
-> *Staff said / I said:*
->
-> *My call, and why:*
->
-> *Which pile:*
 
 **What the pattern in my disagreements tells me:**
-
+That the rule is good when talking about definitive claims, but can have some ambiguity when there is evidence presented, but not enough to make a concrete claim based on it.
 
 
 ---
