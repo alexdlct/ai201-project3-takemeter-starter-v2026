@@ -267,14 +267,15 @@ model. Your agreement report is the thing that can tell you which.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Overall accuracy | At least 0.65 for every seed | **MISSED** | Accuracy was 0.500, 0.467, and 0.633. None of the three seeds reached 0.65. |
+| 2 | Minimum label counts | At least 50 posts per label | **MET** | The dataset contains 54 `analysis`, 50 `hot_take`, and 96 `reaction` posts. |
+| 3 | Maximum label count | No label above 100 posts | **MET** | The largest label is `reaction` with 96 posts, which is below the limit of 100. |
+| 4 | Accuracy of most-confident third | At least 0.70 for every seed | **MET** | The most-confident third achieved 1.000, 1.000, and 0.900 accuracy. |
+| 5 | Confidence accuracy gap | Most-confident third at least 0.15 more accurate than least-confident third for every seed | **MET** | The gaps were 0.800, 1.000, and 0.400, all above 0.15. |
 
 **Diagnoses**
 
+**Criterion 1 — Overall accuracy:** This criterion was missed because the model did not learn the `hot_take` label and leaned heavily toward `reaction`. The `hot_take` F1 score was 0.000 for all three seeds, meaning the model never correctly predicted that label. In seed 42, seven of eight real `hot_take` posts and seven of eight real `analysis` posts were classified as `reaction`; seed 7 classified every `analysis` and `hot_take` test post as `reaction`. Although no label exceeded my balance limit, `reaction` still had 96 examples compared with 54 `analysis` and 50 `hot_take` examples, which gave the model substantially more examples of the majority class. My agreement check was 29 out of 30, and the only disagreement exposed a gap in the staff definitions rather than a pattern of applying a clear rule inconsistently. That evidence points more strongly to limited data, relative class imbalance, and difficult label boundaries than to widespread inconsistency in my labeling.
 <!-- For each miss: the cause, and how you know. The four common causes are:
      too few examples for a label, a boundary you applied inconsistently, a
      genuinely hard label pair, and a task the model can't reach from this
