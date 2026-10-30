@@ -274,8 +274,7 @@ model. Your agreement report is the thing that can tell you which.
 | 5 | Confidence accuracy gap | Most-confident third at least 0.15 more accurate than least-confident third for every seed | **MET** | The gaps were 0.800, 1.000, and 0.400, all above 0.15. |
 
 **Diagnoses**
-
-**Criterion 1 — Overall accuracy:** This criterion was missed because the model did not learn the `hot_take` label and leaned heavily toward `reaction`. The `hot_take` F1 score was 0.000 for all three seeds, meaning the model never correctly predicted that label. In seed 42, seven of eight real `hot_take` posts and seven of eight real `analysis` posts were classified as `reaction`; seed 7 classified every `analysis` and `hot_take` test post as `reaction`. Although no label exceeded my balance limit, `reaction` still had 96 examples compared with 54 `analysis` and 50 `hot_take` examples, which gave the model substantially more examples of the majority class. My agreement check was 29 out of 30, and the only disagreement exposed a gap in the staff definitions rather than a pattern of applying a clear rule inconsistently. That evidence points more strongly to limited data, relative class imbalance, and difficult label boundaries than to widespread inconsistency in my labeling.
+**Criterion 1 — Overall accuracy:** This criterion was missed because the model didn't learn the `hot_take` label and leaned heavily toward `reaction`. The `hot_take` F1 score was 0.000 for all three seeds, meaning the model never correctly predicted that label. In seed 42, seven of eight real `hot_take` posts and seven of eight real `analysis` posts were classified as `reaction`; seed 7 classified every `analysis` and `hot_take` test post as `reaction`. Although no label exceeded my balance limit, `reaction` still had 96 examples compared with 54 `analysis` and 50 `hot_take` examples, which gave the model substantially more examples of the majority class. My agreement check was 29 out of 30, and the only disagreement exposed a gap in the staff definitions rather than a pattern of applying a clear rule inconsistently. That evidence points more strongly to limited data, relative class imbalance, and difficult label boundaries than to widespread inconsistency in my labeling.
 <!-- For each miss: the cause, and how you know. The four common causes are:
      too few examples for a label, a boundary you applied inconsistently, a
      genuinely hard label pair, and a task the model can't reach from this
@@ -337,25 +336,25 @@ That the rule is good when talking about definitive claims, but can have some am
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** I added another 30 posts to the hot_take label
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** The label was the one with the lowest count of data points and had an F1 of 0.0 across all 3 seeds. Overall, my diagnosis pointed more towards a failure in the data sampled, so thats what I chose to address.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Overall accuracy | At least 0.65 for every seed | 0.686 | 0.714 | 0.629 | **MISSED** |
+| 2. Minimum label counts | At least 50 posts per label | 54 / 80 / 96 | 54 / 80 / 96 | 54 / 80 / 96 | **MET** |
+| 3. Maximum label count | No label above 100 posts | 96 | 96 | 96 | **MET** |
+| 4. Accuracy of most-confident third | At least 0.70 for every seed | 0.909 | 0.909 | 0.727 | **MET** |
+| 5. Confidence accuracy gap | At least +0.15 for every seed | +0.273 | +0.364 | +0.182 | **MET** |
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
-
+Yes, it did heop. While it didn't make the first criteria pass, it made significant improvements in the average overall accuracy across all three seeds. It made significant improvements in seeds 42 and 7, but it did make Seed 2024 perform slightly worse.
 
 
 ---
@@ -363,14 +362,19 @@ That the rule is good when talking about definitive claims, but can have some am
 ## What's Still Broken
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
-
+I added more data samples for the hot_take label, which previously performed the worst and had the smallest percentage of the original sample pool. However, we still fail the first criterion, so I think I also need to add more data samples to the analysis label, as it is the next worst performing in the confusion matrix.
 
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
+I initially wanted the analysis label to only be applied to posts that made evidence based arguments about the team, but the model mostly learned to apply the hot_take label to those posts instead. To solve this, I added more hot_take label examples, which allowed the model to be better at differentiating between the two by learning better patterns within the hot_take labels.
 
-
+| true \ predicted | analysis | hot_take | reaction |
+|---|---|---|---|
+| **analysis** | 0 | 8 | 0 |
+| **hot_take** | 0 | 11 | 1 |
+| **reaction** | 0 | 2 | 13 |
 
 <!-- ═════════════════════════════════════════════════════════════════════
 
